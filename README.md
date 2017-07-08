@@ -19,15 +19,6 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### ▼ pyenv-virtualenvのインストール
-
-```sh
-brew update
-brew install pyenv-virtualenv
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
-source ~/.bashrc
-```
-
 ### ▼ anacondaのインストール
 
 ```sh
@@ -39,9 +30,13 @@ pyenv versions
 ### ▼ 仮想環境を設定
 
 ```sh
-pyenv virtualenv anaconda3-4.4.0 fluits-recognizer
-pyenv versions
+# condaコマンドを使うので、一旦globalのversionsをanacondaに
+pyenv global anaconda3-4.4.0
+conda create -n fruits-classify anaconda
+# 必要に応じてglobalの環境を戻す
+# pyenv global system
 ```
+
 
 
 
