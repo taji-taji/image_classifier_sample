@@ -1,2 +1,5 @@
-images.csv
-labels.csv
+**/images.csv
+**/labels.csv
+dict.csv
+train/
+validation/
