@@ -35,8 +35,17 @@ pyenv global anaconda3-4.4.0
 conda create -n fruits-classify anaconda
 # 必要に応じてglobalの環境を戻す
 # pyenv global system
+
+cd /your/workspace
+pyenv local anaconda3-4.4.0/envs/fruit-classify
 ```
 
+### ▼ KerasとTensorflowのインストール
 
+```sh
+# pip install tensorflow
+# pip install keras
+pip install -r requirements.txt
+```
 
 
