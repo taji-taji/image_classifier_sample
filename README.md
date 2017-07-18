@@ -48,4 +48,13 @@ pyenv local anaconda3-4.4.0/envs/fruit-classify
 pip install -r requirements.txt
 ```
 
+### ▼ Core ML Tools のインストール
 
+```sh
+mkdir coremltools
+cd coremltools
+pyenv install anaconda2-4.4.0
+pyenv global anaconda2-4.4.0
+conda create -n coremltools anaconda
+pyenv local anaconda2-4.4.0/envs/coremltools
+```
