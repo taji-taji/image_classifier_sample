@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E15B9891F22F6FE00AE8312 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B9881F22F6FE00AE8312 /* Fruits.swift */; };
 		0E5F7C5B1F224AA000A8A88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C5A1F224AA000A8A88C /* AppDelegate.swift */; };
 		0E5F7C5D1F224AA000A8A88C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C5C1F224AA000A8A88C /* ViewController.swift */; };
 		0E5F7C601F224AA000A8A88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F7C5E1F224AA000A8A88C /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E15B9881F22F6FE00AE8312 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 		0E5F7C571F224AA000A8A88C /* FruitsCategorizerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitsCategorizerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5F7C5A1F224AA000A8A88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5F7C5C1F224AA000A8A88C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				0E5F7C5A1F224AA000A8A88C /* AppDelegate.swift */,
 				0E5F7C5C1F224AA000A8A88C /* ViewController.swift */,
+				0E15B9881F22F6FE00AE8312 /* Fruits.swift */,
 				0E5F7C5E1F224AA000A8A88C /* Main.storyboard */,
 				0E5F7C611F224AA000A8A88C /* Assets.xcassets */,
 				0E5F7C631F224AA000A8A88C /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E5F7C5D1F224AA000A8A88C /* ViewController.swift in Sources */,
+				0E15B9891F22F6FE00AE8312 /* Fruits.swift in Sources */,
 				0E5F7C5B1F224AA000A8A88C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +528,7 @@
 				0E5F7C811F224AA000A8A88C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E5F7C821F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +537,7 @@
 				0E5F7C841F224AA000A8A88C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E5F7C851F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +546,7 @@
 				0E5F7C871F224AA000A8A88C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

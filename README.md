@@ -23,7 +23,7 @@ source ~/.bashrc
 
 ```sh
 pyenv install --list
-pyenv install anaconda3-4.4.0
+pyenv install anaconda2-4.4.0
 pyenv versions
 ```
 
@@ -31,7 +31,7 @@ pyenv versions
 
 ```sh
 # condaコマンドを使うので、一旦globalのversionsをanacondaに
-pyenv global anaconda3-4.4.0
+pyenv global anaconda2-4.4.0
 conda create -n fruits-classify anaconda
 # 必要に応じてglobalの環境を戻す
 # pyenv global system
@@ -40,21 +40,11 @@ cd /your/workspace
 pyenv local anaconda3-4.4.0/envs/fruit-classify
 ```
 
-### ▼ KerasとTensorflowのインストール
+### ▼ Keras, Tensorflow, CoreMLToolsのインストール
 
 ```sh
-# pip install tensorflow
-# pip install keras
+# pip install tensorflow=1.1.1
+# pip install keras=2.0.4
+# pip install coremltools=0.4.0
 pip install -r requirements.txt
-```
-
-### ▼ Core ML Tools のインストール
-
-```sh
-mkdir coremltools
-cd coremltools
-pyenv install anaconda2-4.4.0
-pyenv global anaconda2-4.4.0
-conda create -n coremltools anaconda
-pyenv local anaconda2-4.4.0/envs/coremltools
 ```

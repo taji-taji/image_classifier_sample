@@ -47,7 +47,6 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J12-9z-8kA">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="I4e-GF-rUD"/>
                                     <barButtonItem systemItem="organize" id="gK2-Qp-23K">
                                         <connections>
                                             <action selector="openLibrary:" destination="BYZ-38-t0r" id="dPc-DZ-5Xa"/>
@@ -59,7 +58,6 @@
                                             <action selector="openCamera:" destination="BYZ-38-t0r" id="RLf-Fb-z25"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="v7v-0P-DRO"/>
                                 </items>
                             </toolbar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vma-ZF-NWe">
