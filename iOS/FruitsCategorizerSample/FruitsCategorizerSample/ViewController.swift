@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Vision
 
 class ViewController: UIViewController {
     
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     }
     
     let imagePicker = UIImagePickerController()
+    let classifier = Classifier()
     
     //=========================
     //
@@ -36,7 +38,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        predictImageView.image = Fruits.apple.image
+        classifier.delegate = self
     }
     
     
@@ -56,8 +58,18 @@ class ViewController: UIViewController {
     
 }
 
+
+//=========================
+//
+// MARK: - Private Methods
+//
+//=========================
+
 extension ViewController {
     
+    /**
+     カメラ起動またはフォトライブラリを開く
+     */
     private func openPickerController(with type: UIImagePickerControllerSourceType) {
         guard UIImagePickerController.isSourceTypeAvailable(type) else {
             showAlert(with: type)
@@ -67,6 +79,9 @@ extension ViewController {
         self.present(imagePicker, animated: true, completion: nil)
     }
     
+    /**
+     カメラ・フォトライブラリが使用できない時のアラート
+     */
     private func showAlert(with type: UIImagePickerControllerSourceType) {
         let alert = UIAlertController(title: type.unavailableAlertText, message: nil, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -76,35 +91,3 @@ extension ViewController {
     
 }
 
-extension ViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
-            return
-        }
-        
-        photoImageView.image = image
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-}
-
-extension UIImagePickerControllerSourceType {
-    
-    var unavailableAlertText: String {
-        switch self {
-        case .camera:
-            return "カメラを使用できません"
-        case .photoLibrary:
-            return "フォトライブラリを使用できません"
-        case .savedPhotosAlbum:
-            return "フォトアルバムを使用できません"
-        }
-    }
-    
-}

@@ -17,6 +17,19 @@ enum Fruits {
     case orange
     case strawberry
     
+    init?(withIdentifier identifier: String) {
+        switch identifier {
+        case "apple": self = .apple
+        case "banana": self = .banana
+        case "cherry": self = .cherry
+        case "grape": self = .grape
+        case "melon": self = .melon
+        case "orange": self = .orange
+        case "strawberry": self = .strawberry
+        default: return nil
+        }
+    }
+    
     var image: UIImage {
         switch self {
         case .apple: return UIImage(named: "apple")!
