@@ -37,13 +37,13 @@ conda create -n fruits-classify anaconda
 # pyenv global system
 
 cd /your/workspace
-pyenv local anaconda3-4.4.0/envs/fruit-classify
+pyenv local anaconda2-4.4.0/envs/fruit-classify
 ```
 
 ### ▼ Keras, Tensorflow, CoreMLToolsのインストール
 
 ```sh
-# pip install tensorflow=1.1.1
+# pip install tensorflow=1.1.0
 # pip install keras=2.0.4
 # pip install coremltools=0.4.0
 pip install -r requirements.txt
