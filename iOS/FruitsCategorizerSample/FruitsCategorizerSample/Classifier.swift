@@ -23,6 +23,10 @@ class Classifier {
         }
     }()
     
+    deinit {
+        delegate = nil
+    }
+    
     func classify(image: UIImage) {
         guard let ciImage = CIImage(image: image) else {
             fatalError("can't create CIImage from UIImage")
