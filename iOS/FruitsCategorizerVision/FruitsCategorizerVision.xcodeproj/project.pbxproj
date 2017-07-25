@@ -19,8 +19,8 @@
 		0E5F7C601F224AA000A8A88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F7C5E1F224AA000A8A88C /* Main.storyboard */; };
 		0E5F7C621F224AA000A8A88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F7C611F224AA000A8A88C /* Assets.xcassets */; };
 		0E5F7C651F224AA000A8A88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F7C631F224AA000A8A88C /* LaunchScreen.storyboard */; };
-		0E5F7C701F224AA000A8A88C /* FruitsCategorizerSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerSampleTests.swift */; };
-		0E5F7C7B1F224AA000A8A88C /* FruitsCategorizerSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerSampleUITests.swift */; };
+		0E5F7C701F224AA000A8A88C /* FruitsCategorizerVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerVisionTests.swift */; };
+		0E5F7C7B1F224AA000A8A88C /* FruitsCategorizerVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerVisionUITests.swift */; };
 		0EFAAB1A1F275467009EE15E /* fruits_classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB191F275467009EE15E /* fruits_classifier.mlmodel */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +57,10 @@
 		0E5F7C641F224AA000A8A88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E5F7C661F224AA000A8A88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5F7C6B1F224AA000A8A88C /* FruitsCategorizerVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategorizerVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategorizerSampleTests.swift; sourceTree = "<group>"; };
+		0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerVisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategorizerVisionTests.swift; sourceTree = "<group>"; };
 		0E5F7C711F224AA000A8A88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5F7C761F224AA000A8A88C /* FruitsCategorizerVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategorizerVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategorizerSampleUITests.swift; sourceTree = "<group>"; };
+		0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategorizerVisionUITests.swift; sourceTree = "<group>"; };
 		0E5F7C7C1F224AA000A8A88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EFAAB191F275467009EE15E /* fruits_classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = fruits_classifier.mlmodel; path = ../../../coremltools/models/fruits_classifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +134,7 @@
 		0E5F7C6E1F224AA000A8A88C /* FruitsCategorizerVisionTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerSampleTests.swift */,
+				0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerVisionTests.swift */,
 				0E5F7C711F224AA000A8A88C /* Info.plist */,
 			);
 			path = FruitsCategorizerVisionTests;
@@ -143,7 +143,7 @@
 		0E5F7C791F224AA000A8A88C /* FruitsCategorizerVisionUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerSampleUITests.swift */,
+				0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerVisionUITests.swift */,
 				0E5F7C7C1F224AA000A8A88C /* Info.plist */,
 			);
 			path = FruitsCategorizerVisionUITests;
@@ -297,7 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5F7C701F224AA000A8A88C /* FruitsCategorizerSampleTests.swift in Sources */,
+				0E5F7C701F224AA000A8A88C /* FruitsCategorizerVisionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5F7C7B1F224AA000A8A88C /* FruitsCategorizerSampleUITests.swift in Sources */,
+				0E5F7C7B1F224AA000A8A88C /* FruitsCategorizerVisionUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

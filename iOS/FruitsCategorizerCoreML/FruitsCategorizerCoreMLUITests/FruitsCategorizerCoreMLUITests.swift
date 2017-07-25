@@ -1,6 +1,6 @@
 //
-//  FruitsCategozerCoreMLUITests.swift
-//  FruitsCategozerCoreMLUITests
+//  FruitsCategorizerCoreMLUITests.swift
+//  FruitsCategorizerCoreMLUITests
 //
 //  Created by 多鹿豊 on 2017/07/25.
 //  Copyright © 2017年 多鹿豊. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class FruitsCategozerCoreMLUITests: XCTestCase {
+class FruitsCategorizerCoreMLUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

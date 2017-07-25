@@ -1,15 +1,15 @@
 //
-//  FruitsCategozerCoreMLTests.swift
-//  FruitsCategozerCoreMLTests
+//  FruitsCategorizerCoreMLTests.swift
+//  FruitsCategorizerCoreMLTests
 //
 //  Created by 多鹿豊 on 2017/07/25.
 //  Copyright © 2017年 多鹿豊. All rights reserved.
 //
 
 import XCTest
-@testable import FruitsCategozerCoreML
+@testable import FruitsCategorizerCoreML
 
-class FruitsCategozerCoreMLTests: XCTestCase {
+class FruitsCategorizerCoreMLTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
