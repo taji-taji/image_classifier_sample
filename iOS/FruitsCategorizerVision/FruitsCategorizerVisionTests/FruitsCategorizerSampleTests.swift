@@ -1,15 +1,15 @@
 //
-//  FruitsCategorizerSampleTests.swift
-//  FruitsCategorizerSampleTests
+//  FruitsCategorizerVisionTests.swift
+//  FruitsCategorizerVisionTests
 //
 //  Created by 多鹿豊 on 2017/07/21.
 //  Copyright © 2017年 多鹿豊. All rights reserved.
 //
 
 import XCTest
-@testable import FruitsCategorizerSample
+@testable import FruitsCategorizerVision
 
-class FruitsCategorizerSampleTests: XCTestCase {
+class FruitsCategorizerVisionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

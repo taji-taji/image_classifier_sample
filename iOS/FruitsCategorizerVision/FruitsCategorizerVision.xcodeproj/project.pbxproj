@@ -49,17 +49,17 @@
 		0E15B9961F244F6B00AE8312 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		0E15B9981F2454E600AE8312 /* ViewController+ClassifierCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ClassifierCompatible.swift"; sourceTree = "<group>"; };
 		0E15B99A1F2457BF00AE8312 /* ClassifierCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierCompatible.swift; sourceTree = "<group>"; };
-		0E5F7C571F224AA000A8A88C /* FruitsCategorizerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitsCategorizerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5F7C571F224AA000A8A88C /* FruitsCategorizerVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitsCategorizerVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5F7C5A1F224AA000A8A88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5F7C5C1F224AA000A8A88C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E5F7C5F1F224AA000A8A88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E5F7C611F224AA000A8A88C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5F7C641F224AA000A8A88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E5F7C661F224AA000A8A88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E5F7C6B1F224AA000A8A88C /* FruitsCategorizerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategorizerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5F7C6B1F224AA000A8A88C /* FruitsCategorizerVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategorizerVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategorizerSampleTests.swift; sourceTree = "<group>"; };
 		0E5F7C711F224AA000A8A88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E5F7C761F224AA000A8A88C /* FruitsCategorizerSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategorizerSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5F7C761F224AA000A8A88C /* FruitsCategorizerVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategorizerVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategorizerSampleUITests.swift; sourceTree = "<group>"; };
 		0E5F7C7C1F224AA000A8A88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EFAAB191F275467009EE15E /* fruits_classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = fruits_classifier.mlmodel; path = ../../../coremltools/models/fruits_classifier.mlmodel; sourceTree = "<group>"; };
@@ -93,9 +93,9 @@
 		0E5F7C4E1F224AA000A8A88C = {
 			isa = PBXGroup;
 			children = (
-				0E5F7C591F224AA000A8A88C /* FruitsCategorizerSample */,
-				0E5F7C6E1F224AA000A8A88C /* FruitsCategorizerSampleTests */,
-				0E5F7C791F224AA000A8A88C /* FruitsCategorizerSampleUITests */,
+				0E5F7C591F224AA000A8A88C /* FruitsCategorizerVision */,
+				0E5F7C6E1F224AA000A8A88C /* FruitsCategorizerVisionTests */,
+				0E5F7C791F224AA000A8A88C /* FruitsCategorizerVisionUITests */,
 				0E5F7C581F224AA000A8A88C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,14 +103,14 @@
 		0E5F7C581F224AA000A8A88C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E5F7C571F224AA000A8A88C /* FruitsCategorizerSample.app */,
-				0E5F7C6B1F224AA000A8A88C /* FruitsCategorizerSampleTests.xctest */,
-				0E5F7C761F224AA000A8A88C /* FruitsCategorizerSampleUITests.xctest */,
+				0E5F7C571F224AA000A8A88C /* FruitsCategorizerVision.app */,
+				0E5F7C6B1F224AA000A8A88C /* FruitsCategorizerVisionTests.xctest */,
+				0E5F7C761F224AA000A8A88C /* FruitsCategorizerVisionUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E5F7C591F224AA000A8A88C /* FruitsCategorizerSample */ = {
+		0E5F7C591F224AA000A8A88C /* FruitsCategorizerVision */ = {
 			isa = PBXGroup;
 			children = (
 				0EFAAB191F275467009EE15E /* fruits_classifier.mlmodel */,
@@ -128,33 +128,33 @@
 				0E5F7C631F224AA000A8A88C /* LaunchScreen.storyboard */,
 				0E5F7C661F224AA000A8A88C /* Info.plist */,
 			);
-			path = FruitsCategorizerSample;
+			path = FruitsCategorizerVision;
 			sourceTree = "<group>";
 		};
-		0E5F7C6E1F224AA000A8A88C /* FruitsCategorizerSampleTests */ = {
+		0E5F7C6E1F224AA000A8A88C /* FruitsCategorizerVisionTests */ = {
 			isa = PBXGroup;
 			children = (
 				0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerSampleTests.swift */,
 				0E5F7C711F224AA000A8A88C /* Info.plist */,
 			);
-			path = FruitsCategorizerSampleTests;
+			path = FruitsCategorizerVisionTests;
 			sourceTree = "<group>";
 		};
-		0E5F7C791F224AA000A8A88C /* FruitsCategorizerSampleUITests */ = {
+		0E5F7C791F224AA000A8A88C /* FruitsCategorizerVisionUITests */ = {
 			isa = PBXGroup;
 			children = (
 				0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerSampleUITests.swift */,
 				0E5F7C7C1F224AA000A8A88C /* Info.plist */,
 			);
-			path = FruitsCategorizerSampleUITests;
+			path = FruitsCategorizerVisionUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0E5F7C561F224AA000A8A88C /* FruitsCategorizerSample */ = {
+		0E5F7C561F224AA000A8A88C /* FruitsCategorizerVision */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E5F7C7F1F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerSample" */;
+			buildConfigurationList = 0E5F7C7F1F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerVision" */;
 			buildPhases = (
 				0E5F7C531F224AA000A8A88C /* Sources */,
 				0E5F7C541F224AA000A8A88C /* Frameworks */,
@@ -164,14 +164,14 @@
 			);
 			dependencies = (
 			);
-			name = FruitsCategorizerSample;
+			name = FruitsCategorizerVision;
 			productName = FruitsCategorizerSample;
-			productReference = 0E5F7C571F224AA000A8A88C /* FruitsCategorizerSample.app */;
+			productReference = 0E5F7C571F224AA000A8A88C /* FruitsCategorizerVision.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0E5F7C6A1F224AA000A8A88C /* FruitsCategorizerSampleTests */ = {
+		0E5F7C6A1F224AA000A8A88C /* FruitsCategorizerVisionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E5F7C821F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerSampleTests" */;
+			buildConfigurationList = 0E5F7C821F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerVisionTests" */;
 			buildPhases = (
 				0E5F7C671F224AA000A8A88C /* Sources */,
 				0E5F7C681F224AA000A8A88C /* Frameworks */,
@@ -182,14 +182,14 @@
 			dependencies = (
 				0E5F7C6D1F224AA000A8A88C /* PBXTargetDependency */,
 			);
-			name = FruitsCategorizerSampleTests;
+			name = FruitsCategorizerVisionTests;
 			productName = FruitsCategorizerSampleTests;
-			productReference = 0E5F7C6B1F224AA000A8A88C /* FruitsCategorizerSampleTests.xctest */;
+			productReference = 0E5F7C6B1F224AA000A8A88C /* FruitsCategorizerVisionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0E5F7C751F224AA000A8A88C /* FruitsCategorizerSampleUITests */ = {
+		0E5F7C751F224AA000A8A88C /* FruitsCategorizerVisionUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E5F7C851F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerSampleUITests" */;
+			buildConfigurationList = 0E5F7C851F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerVisionUITests" */;
 			buildPhases = (
 				0E5F7C721F224AA000A8A88C /* Sources */,
 				0E5F7C731F224AA000A8A88C /* Frameworks */,
@@ -200,9 +200,9 @@
 			dependencies = (
 				0E5F7C781F224AA000A8A88C /* PBXTargetDependency */,
 			);
-			name = FruitsCategorizerSampleUITests;
+			name = FruitsCategorizerVisionUITests;
 			productName = FruitsCategorizerSampleUITests;
-			productReference = 0E5F7C761F224AA000A8A88C /* FruitsCategorizerSampleUITests.xctest */;
+			productReference = 0E5F7C761F224AA000A8A88C /* FruitsCategorizerVisionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0E5F7C521F224AA000A8A88C /* Build configuration list for PBXProject "FruitsCategorizerSample" */;
+			buildConfigurationList = 0E5F7C521F224AA000A8A88C /* Build configuration list for PBXProject "FruitsCategorizerVision" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,9 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E5F7C561F224AA000A8A88C /* FruitsCategorizerSample */,
-				0E5F7C6A1F224AA000A8A88C /* FruitsCategorizerSampleTests */,
-				0E5F7C751F224AA000A8A88C /* FruitsCategorizerSampleUITests */,
+				0E5F7C561F224AA000A8A88C /* FruitsCategorizerVision */,
+				0E5F7C6A1F224AA000A8A88C /* FruitsCategorizerVisionTests */,
+				0E5F7C751F224AA000A8A88C /* FruitsCategorizerVisionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,12 +314,12 @@
 /* Begin PBXTargetDependency section */
 		0E5F7C6D1F224AA000A8A88C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0E5F7C561F224AA000A8A88C /* FruitsCategorizerSample */;
+			target = 0E5F7C561F224AA000A8A88C /* FruitsCategorizerVision */;
 			targetProxy = 0E5F7C6C1F224AA000A8A88C /* PBXContainerItemProxy */;
 		};
 		0E5F7C781F224AA000A8A88C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0E5F7C561F224AA000A8A88C /* FruitsCategorizerSample */;
+			target = 0E5F7C561F224AA000A8A88C /* FruitsCategorizerVision */;
 			targetProxy = 0E5F7C771F224AA000A8A88C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -452,9 +452,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R5U4C8KFRC;
-				INFOPLIST_FILE = FruitsCategorizerSample/Info.plist;
+				INFOPLIST_FILE = FruitsCategorizerVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerVisoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,9 +466,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R5U4C8KFRC;
-				INFOPLIST_FILE = FruitsCategorizerSample/Info.plist;
+				INFOPLIST_FILE = FruitsCategorizerVision/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerVisoin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,13 +481,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = R5U4C8KFRC;
-				INFOPLIST_FILE = FruitsCategorizerSampleTests/Info.plist;
+				INFOPLIST_FILE = FruitsCategorizerVisionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerVisionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitsCategorizerSample.app/FruitsCategorizerSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitsCategorizerVision.app/FruitsCategorizerVision";
 			};
 			name = Debug;
 		};
@@ -497,13 +497,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = R5U4C8KFRC;
-				INFOPLIST_FILE = FruitsCategorizerSampleTests/Info.plist;
+				INFOPLIST_FILE = FruitsCategorizerVisionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerSampleTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerVisionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitsCategorizerSample.app/FruitsCategorizerSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitsCategorizerVision.app/FruitsCategorizerVision";
 			};
 			name = Release;
 		};
@@ -512,13 +512,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = R5U4C8KFRC;
-				INFOPLIST_FILE = FruitsCategorizerSampleUITests/Info.plist;
+				INFOPLIST_FILE = FruitsCategorizerVisionUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerVisionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FruitsCategorizerSample;
+				TEST_TARGET_NAME = FruitsCategorizerVision;
 			};
 			name = Debug;
 		};
@@ -527,20 +527,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = R5U4C8KFRC;
-				INFOPLIST_FILE = FruitsCategorizerSampleUITests/Info.plist;
+				INFOPLIST_FILE = FruitsCategorizerVisionUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerSampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategorizerVisionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = FruitsCategorizerSample;
+				TEST_TARGET_NAME = FruitsCategorizerVision;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E5F7C521F224AA000A8A88C /* Build configuration list for PBXProject "FruitsCategorizerSample" */ = {
+		0E5F7C521F224AA000A8A88C /* Build configuration list for PBXProject "FruitsCategorizerVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E5F7C7D1F224AA000A8A88C /* Debug */,
@@ -549,7 +549,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E5F7C7F1F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerSample" */ = {
+		0E5F7C7F1F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E5F7C801F224AA000A8A88C /* Debug */,
@@ -558,7 +558,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E5F7C821F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerSampleTests" */ = {
+		0E5F7C821F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerVisionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E5F7C831F224AA000A8A88C /* Debug */,
@@ -567,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E5F7C851F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerSampleUITests" */ = {
+		0E5F7C851F224AA000A8A88C /* Build configuration list for PBXNativeTarget "FruitsCategorizerVisionUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E5F7C861F224AA000A8A88C /* Debug */,

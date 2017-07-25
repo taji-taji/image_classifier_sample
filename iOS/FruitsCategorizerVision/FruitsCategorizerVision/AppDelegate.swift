@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  FruitsCategorizerSample
+//  FruitsCategorizerVision
 //
 //  Created by 多鹿豊 on 2017/07/21.
 //  Copyright © 2017年 多鹿豊. All rights reserved.
