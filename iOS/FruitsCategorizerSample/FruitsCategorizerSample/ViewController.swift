@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Vision
 
 class ViewController: UIViewController {
     
