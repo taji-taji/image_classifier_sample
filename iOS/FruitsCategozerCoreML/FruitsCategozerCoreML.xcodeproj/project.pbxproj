@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EFAAB281F2755DF009EE15E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB271F2755DF009EE15E /* AppDelegate.swift */; };
+		0EFAAB2A1F2755DF009EE15E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB291F2755DF009EE15E /* ViewController.swift */; };
+		0EFAAB2D1F2755DF009EE15E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFAAB2B1F2755DF009EE15E /* Main.storyboard */; };
+		0EFAAB2F1F2755DF009EE15E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EFAAB2E1F2755DF009EE15E /* Assets.xcassets */; };
+		0EFAAB321F2755DF009EE15E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFAAB301F2755DF009EE15E /* LaunchScreen.storyboard */; };
+		0EFAAB3D1F2755DF009EE15E /* FruitsCategozerCoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB3C1F2755DF009EE15E /* FruitsCategozerCoreMLTests.swift */; };
+		0EFAAB481F2755DF009EE15E /* FruitsCategozerCoreMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB471F2755DF009EE15E /* FruitsCategozerCoreMLUITests.swift */; };
+		0EFAAB561F27563C009EE15E /* ViewController+UIImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB551F27563C009EE15E /* ViewController+UIImagePickerControllerDelegate.swift */; };
+		0EFAAB581F275660009EE15E /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB571F275660009EE15E /* Classifier.swift */; };
+		0EFAAB5A1F2756B2009EE15E /* fruits_classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB591F2756B2009EE15E /* fruits_classifier.mlmodel */; };
+		0EFAAB5C1F2756C7009EE15E /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB5B1F2756C7009EE15E /* Fruits.swift */; };
+		0EFAAB5E1F2756E6009EE15E /* ClassifierCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB5D1F2756E6009EE15E /* ClassifierCompatible.swift */; };
+		0EFAAB601F275849009EE15E /* ViewController+ClassifierCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB5F1F275849009EE15E /* ViewController+ClassifierCompatible.swift */; };
+		0EFAAB621F27587B009EE15E /* UIImagePickerControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB611F27587B009EE15E /* UIImagePickerControllerExtension.swift */; };
+		0EFAAB641F275B42009EE15E /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB631F275B42009EE15E /* UIImageExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EFAAB391F2755DF009EE15E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EFAAB1C1F2755DF009EE15E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EFAAB231F2755DF009EE15E;
+			remoteInfo = FruitsCategozerCoreML;
+		};
+		0EFAAB441F2755DF009EE15E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EFAAB1C1F2755DF009EE15E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EFAAB231F2755DF009EE15E;
+			remoteInfo = FruitsCategozerCoreML;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EFAAB241F2755DF009EE15E /* FruitsCategozerCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitsCategozerCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EFAAB271F2755DF009EE15E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0EFAAB291F2755DF009EE15E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0EFAAB2C1F2755DF009EE15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0EFAAB2E1F2755DF009EE15E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0EFAAB311F2755DF009EE15E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EFAAB331F2755DF009EE15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EFAAB381F2755DF009EE15E /* FruitsCategozerCoreMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategozerCoreMLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EFAAB3C1F2755DF009EE15E /* FruitsCategozerCoreMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategozerCoreMLTests.swift; sourceTree = "<group>"; };
+		0EFAAB3E1F2755DF009EE15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EFAAB431F2755DF009EE15E /* FruitsCategozerCoreMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategozerCoreMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EFAAB471F2755DF009EE15E /* FruitsCategozerCoreMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategozerCoreMLUITests.swift; sourceTree = "<group>"; };
+		0EFAAB491F2755DF009EE15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EFAAB551F27563C009EE15E /* ViewController+UIImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UIImagePickerControllerDelegate.swift"; sourceTree = "<group>"; };
+		0EFAAB571F275660009EE15E /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		0EFAAB591F2756B2009EE15E /* fruits_classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = fruits_classifier.mlmodel; path = ../../../coremltools/models/fruits_classifier.mlmodel; sourceTree = "<group>"; };
+		0EFAAB5B1F2756C7009EE15E /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		0EFAAB5D1F2756E6009EE15E /* ClassifierCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierCompatible.swift; sourceTree = "<group>"; };
+		0EFAAB5F1F275849009EE15E /* ViewController+ClassifierCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ClassifierCompatible.swift"; sourceTree = "<group>"; };
+		0EFAAB611F27587B009EE15E /* UIImagePickerControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerExtension.swift; sourceTree = "<group>"; };
+		0EFAAB631F275B42009EE15E /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EFAAB211F2755DF009EE15E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFAAB351F2755DF009EE15E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFAAB401F2755DF009EE15E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EFAAB1B1F2755DF009EE15E = {
+			isa = PBXGroup;
+			children = (
+				0EFAAB261F2755DF009EE15E /* FruitsCategozerCoreML */,
+				0EFAAB3B1F2755DF009EE15E /* FruitsCategozerCoreMLTests */,
+				0EFAAB461F2755DF009EE15E /* FruitsCategozerCoreMLUITests */,
+				0EFAAB251F2755DF009EE15E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0EFAAB251F2755DF009EE15E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EFAAB241F2755DF009EE15E /* FruitsCategozerCoreML.app */,
+				0EFAAB381F2755DF009EE15E /* FruitsCategozerCoreMLTests.xctest */,
+				0EFAAB431F2755DF009EE15E /* FruitsCategozerCoreMLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EFAAB261F2755DF009EE15E /* FruitsCategozerCoreML */ = {
+			isa = PBXGroup;
+			children = (
+				0EFAAB591F2756B2009EE15E /* fruits_classifier.mlmodel */,
+				0EFAAB271F2755DF009EE15E /* AppDelegate.swift */,
+				0EFAAB291F2755DF009EE15E /* ViewController.swift */,
+				0EFAAB5F1F275849009EE15E /* ViewController+ClassifierCompatible.swift */,
+				0EFAAB611F27587B009EE15E /* UIImagePickerControllerExtension.swift */,
+				0EFAAB551F27563C009EE15E /* ViewController+UIImagePickerControllerDelegate.swift */,
+				0EFAAB571F275660009EE15E /* Classifier.swift */,
+				0EFAAB631F275B42009EE15E /* UIImageExtension.swift */,
+				0EFAAB5B1F2756C7009EE15E /* Fruits.swift */,
+				0EFAAB5D1F2756E6009EE15E /* ClassifierCompatible.swift */,
+				0EFAAB2B1F2755DF009EE15E /* Main.storyboard */,
+				0EFAAB2E1F2755DF009EE15E /* Assets.xcassets */,
+				0EFAAB301F2755DF009EE15E /* LaunchScreen.storyboard */,
+				0EFAAB331F2755DF009EE15E /* Info.plist */,
+			);
+			path = FruitsCategozerCoreML;
+			sourceTree = "<group>";
+		};
+		0EFAAB3B1F2755DF009EE15E /* FruitsCategozerCoreMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				0EFAAB3C1F2755DF009EE15E /* FruitsCategozerCoreMLTests.swift */,
+				0EFAAB3E1F2755DF009EE15E /* Info.plist */,
+			);
+			path = FruitsCategozerCoreMLTests;
+			sourceTree = "<group>";
+		};
+		0EFAAB461F2755DF009EE15E /* FruitsCategozerCoreMLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0EFAAB471F2755DF009EE15E /* FruitsCategozerCoreMLUITests.swift */,
+				0EFAAB491F2755DF009EE15E /* Info.plist */,
+			);
+			path = FruitsCategozerCoreMLUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EFAAB231F2755DF009EE15E /* FruitsCategozerCoreML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EFAAB4C1F2755DF009EE15E /* Build configuration list for PBXNativeTarget "FruitsCategozerCoreML" */;
+			buildPhases = (
+				0EFAAB201F2755DF009EE15E /* Sources */,
+				0EFAAB211F2755DF009EE15E /* Frameworks */,
+				0EFAAB221F2755DF009EE15E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FruitsCategozerCoreML;
+			productName = FruitsCategozerCoreML;
+			productReference = 0EFAAB241F2755DF009EE15E /* FruitsCategozerCoreML.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0EFAAB371F2755DF009EE15E /* FruitsCategozerCoreMLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EFAAB4F1F2755DF009EE15E /* Build configuration list for PBXNativeTarget "FruitsCategozerCoreMLTests" */;
+			buildPhases = (
+				0EFAAB341F2755DF009EE15E /* Sources */,
+				0EFAAB351F2755DF009EE15E /* Frameworks */,
+				0EFAAB361F2755DF009EE15E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EFAAB3A1F2755DF009EE15E /* PBXTargetDependency */,
+			);
+			name = FruitsCategozerCoreMLTests;
+			productName = FruitsCategozerCoreMLTests;
+			productReference = 0EFAAB381F2755DF009EE15E /* FruitsCategozerCoreMLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0EFAAB421F2755DF009EE15E /* FruitsCategozerCoreMLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EFAAB521F2755DF009EE15E /* Build configuration list for PBXNativeTarget "FruitsCategozerCoreMLUITests" */;
+			buildPhases = (
+				0EFAAB3F1F2755DF009EE15E /* Sources */,
+				0EFAAB401F2755DF009EE15E /* Frameworks */,
+				0EFAAB411F2755DF009EE15E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EFAAB451F2755DF009EE15E /* PBXTargetDependency */,
+			);
+			name = FruitsCategozerCoreMLUITests;
+			productName = FruitsCategozerCoreMLUITests;
+			productReference = 0EFAAB431F2755DF009EE15E /* FruitsCategozerCoreMLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EFAAB1C1F2755DF009EE15E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "多鹿豊";
+				TargetAttributes = {
+					0EFAAB231F2755DF009EE15E = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					0EFAAB371F2755DF009EE15E = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 0EFAAB231F2755DF009EE15E;
+					};
+					0EFAAB421F2755DF009EE15E = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 0EFAAB231F2755DF009EE15E;
+					};
+				};
+			};
+			buildConfigurationList = 0EFAAB1F1F2755DF009EE15E /* Build configuration list for PBXProject "FruitsCategozerCoreML" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0EFAAB1B1F2755DF009EE15E;
+			productRefGroup = 0EFAAB251F2755DF009EE15E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EFAAB231F2755DF009EE15E /* FruitsCategozerCoreML */,
+				0EFAAB371F2755DF009EE15E /* FruitsCategozerCoreMLTests */,
+				0EFAAB421F2755DF009EE15E /* FruitsCategozerCoreMLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EFAAB221F2755DF009EE15E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFAAB321F2755DF009EE15E /* LaunchScreen.storyboard in Resources */,
+				0EFAAB2F1F2755DF009EE15E /* Assets.xcassets in Resources */,
+				0EFAAB2D1F2755DF009EE15E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFAAB361F2755DF009EE15E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFAAB411F2755DF009EE15E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EFAAB201F2755DF009EE15E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFAAB581F275660009EE15E /* Classifier.swift in Sources */,
+				0EFAAB2A1F2755DF009EE15E /* ViewController.swift in Sources */,
+				0EFAAB5C1F2756C7009EE15E /* Fruits.swift in Sources */,
+				0EFAAB641F275B42009EE15E /* UIImageExtension.swift in Sources */,
+				0EFAAB601F275849009EE15E /* ViewController+ClassifierCompatible.swift in Sources */,
+				0EFAAB621F27587B009EE15E /* UIImagePickerControllerExtension.swift in Sources */,
+				0EFAAB561F27563C009EE15E /* ViewController+UIImagePickerControllerDelegate.swift in Sources */,
+				0EFAAB5A1F2756B2009EE15E /* fruits_classifier.mlmodel in Sources */,
+				0EFAAB281F2755DF009EE15E /* AppDelegate.swift in Sources */,
+				0EFAAB5E1F2756E6009EE15E /* ClassifierCompatible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFAAB341F2755DF009EE15E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFAAB3D1F2755DF009EE15E /* FruitsCategozerCoreMLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EFAAB3F1F2755DF009EE15E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EFAAB481F2755DF009EE15E /* FruitsCategozerCoreMLUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EFAAB3A1F2755DF009EE15E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EFAAB231F2755DF009EE15E /* FruitsCategozerCoreML */;
+			targetProxy = 0EFAAB391F2755DF009EE15E /* PBXContainerItemProxy */;
+		};
+		0EFAAB451F2755DF009EE15E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EFAAB231F2755DF009EE15E /* FruitsCategozerCoreML */;
+			targetProxy = 0EFAAB441F2755DF009EE15E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0EFAAB2B1F2755DF009EE15E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFAAB2C1F2755DF009EE15E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0EFAAB301F2755DF009EE15E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EFAAB311F2755DF009EE15E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EFAAB4A1F2755DF009EE15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0EFAAB4B1F2755DF009EE15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EFAAB4D1F2755DF009EE15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5U4C8KFRC;
+				INFOPLIST_FILE = FruitsCategozerCoreML/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategozerCoreML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0EFAAB4E1F2755DF009EE15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5U4C8KFRC;
+				INFOPLIST_FILE = FruitsCategozerCoreML/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategozerCoreML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0EFAAB501F2755DF009EE15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R5U4C8KFRC;
+				INFOPLIST_FILE = FruitsCategozerCoreMLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategozerCoreMLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitsCategozerCoreML.app/FruitsCategozerCoreML";
+			};
+			name = Debug;
+		};
+		0EFAAB511F2755DF009EE15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R5U4C8KFRC;
+				INFOPLIST_FILE = FruitsCategozerCoreMLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategozerCoreMLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitsCategozerCoreML.app/FruitsCategozerCoreML";
+			};
+			name = Release;
+		};
+		0EFAAB531F2755DF009EE15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = R5U4C8KFRC;
+				INFOPLIST_FILE = FruitsCategozerCoreMLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategozerCoreMLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FruitsCategozerCoreML;
+			};
+			name = Debug;
+		};
+		0EFAAB541F2755DF009EE15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = R5U4C8KFRC;
+				INFOPLIST_FILE = FruitsCategozerCoreMLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.engideer.FruitsCategozerCoreMLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FruitsCategozerCoreML;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EFAAB1F1F2755DF009EE15E /* Build configuration list for PBXProject "FruitsCategozerCoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFAAB4A1F2755DF009EE15E /* Debug */,
+				0EFAAB4B1F2755DF009EE15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EFAAB4C1F2755DF009EE15E /* Build configuration list for PBXNativeTarget "FruitsCategozerCoreML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFAAB4D1F2755DF009EE15E /* Debug */,
+				0EFAAB4E1F2755DF009EE15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0EFAAB4F1F2755DF009EE15E /* Build configuration list for PBXNativeTarget "FruitsCategozerCoreMLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFAAB501F2755DF009EE15E /* Debug */,
+				0EFAAB511F2755DF009EE15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0EFAAB521F2755DF009EE15E /* Build configuration list for PBXNativeTarget "FruitsCategozerCoreMLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFAAB531F2755DF009EE15E /* Debug */,
+				0EFAAB541F2755DF009EE15E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EFAAB1C1F2755DF009EE15E /* Project object */;
+}
