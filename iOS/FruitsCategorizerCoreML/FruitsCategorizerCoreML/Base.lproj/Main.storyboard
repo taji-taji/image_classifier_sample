@@ -28,7 +28,7 @@
         <!--View Controller-->
         <scene sceneID="W5y-gl-7Rd">
             <objects>
-                <viewController id="KS8-zC-N38" customClass="ViewController" customModule="FruitsCategorizerSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KS8-zC-N38" customClass="ViewController" customModule="FruitsCategorizerCoreML" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yDY-gh-Uce"/>
                         <viewControllerLayoutGuide type="bottom" id="DOc-Jf-0vn"/>
@@ -44,28 +44,32 @@
                                     <constraint firstAttribute="width" secondItem="ZXn-sV-5yo" secondAttribute="height" multiplier="1:1" id="gGT-gq-8bm"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOA-34-eda">
-                                <rect key="frame" x="0.0" y="439" width="375" height="184"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Poe-gP-pym">
+                                <rect key="frame" x="10" y="454" width="355" height="64"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bxT-hf-iia">
-                                        <rect key="frame" x="162.5" y="67" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="YJB-7I-Itr"/>
-                                            <constraint firstAttribute="height" constant="50" id="r3R-7g-HDY"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="dkD-If-gEz">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="64"/>
                                     </imageView>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xdZ-v3-cbn">
-                                        <rect key="frame" x="177" y="82" width="20" height="20"/>
-                                    </activityIndicatorView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="ZWJ-4E-hnb">
+                                        <rect key="frame" x="51" y="0.0" width="48.5" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cherry" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-6w-cWo">
+                                        <rect key="frame" x="102.5" y="0.0" width="48" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grape" translatesAutoresizingMaskIntoConstraints="NO" id="72m-yP-eDa">
+                                        <rect key="frame" x="153.5" y="0.0" width="48" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="melon" translatesAutoresizingMaskIntoConstraints="NO" id="M4c-3Z-W4n">
+                                        <rect key="frame" x="204.5" y="0.0" width="48" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange" translatesAutoresizingMaskIntoConstraints="NO" id="2pb-NP-dzs">
+                                        <rect key="frame" x="255.5" y="0.0" width="48.5" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strawberry" translatesAutoresizingMaskIntoConstraints="NO" id="JKH-rm-vHc">
+                                        <rect key="frame" x="307" y="0.0" width="48" height="64"/>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="bxT-hf-iia" firstAttribute="centerY" secondItem="NOA-34-eda" secondAttribute="centerY" id="BMa-vm-6Sl"/>
-                                    <constraint firstItem="bxT-hf-iia" firstAttribute="centerX" secondItem="NOA-34-eda" secondAttribute="centerX" id="H7s-ei-8ji"/>
-                                    <constraint firstItem="xdZ-v3-cbn" firstAttribute="centerX" secondItem="NOA-34-eda" secondAttribute="centerX" id="Nj8-CP-1be"/>
-                                    <constraint firstItem="xdZ-v3-cbn" firstAttribute="centerY" secondItem="NOA-34-eda" secondAttribute="centerY" id="UJO-NX-ftT"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ove-aH-5Ij">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
@@ -84,26 +88,36 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xdZ-v3-cbn">
+                                <rect key="frame" x="177" y="241" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZXn-sV-5yo" firstAttribute="leading" secondItem="FFP-Yo-79q" secondAttribute="leading" id="0af-p4-bJY"/>
                             <constraint firstItem="DOc-Jf-0vn" firstAttribute="top" secondItem="Ove-aH-5Ij" secondAttribute="bottom" id="AI8-ep-1s4"/>
-                            <constraint firstItem="NOA-34-eda" firstAttribute="top" secondItem="ZXn-sV-5yo" secondAttribute="bottom" id="DDs-s5-jat"/>
                             <constraint firstItem="Ove-aH-5Ij" firstAttribute="leading" secondItem="FFP-Yo-79q" secondAttribute="leading" id="FEz-jO-SKf"/>
+                            <constraint firstItem="xdZ-v3-cbn" firstAttribute="centerY" secondItem="ZXn-sV-5yo" secondAttribute="centerY" id="GAf-nv-h1U"/>
                             <constraint firstAttribute="trailing" secondItem="Ove-aH-5Ij" secondAttribute="trailing" id="P11-Dl-Njf"/>
+                            <constraint firstItem="Poe-gP-pym" firstAttribute="top" secondItem="ZXn-sV-5yo" secondAttribute="bottom" constant="15" id="baC-v6-PZp"/>
+                            <constraint firstItem="Poe-gP-pym" firstAttribute="leading" secondItem="FFP-Yo-79q" secondAttribute="leading" constant="10" id="hBz-ck-Lxp"/>
+                            <constraint firstAttribute="trailing" secondItem="Poe-gP-pym" secondAttribute="trailing" constant="10" id="jJH-yb-fVa"/>
                             <constraint firstItem="ZXn-sV-5yo" firstAttribute="top" secondItem="yDY-gh-Uce" secondAttribute="bottom" id="kxu-q8-KM7"/>
-                            <constraint firstAttribute="trailing" secondItem="NOA-34-eda" secondAttribute="trailing" id="nII-tg-lLM"/>
                             <constraint firstAttribute="trailing" secondItem="ZXn-sV-5yo" secondAttribute="trailing" id="ner-1M-b3z"/>
-                            <constraint firstItem="Ove-aH-5Ij" firstAttribute="top" secondItem="NOA-34-eda" secondAttribute="bottom" id="wm9-U5-kwq"/>
-                            <constraint firstItem="NOA-34-eda" firstAttribute="leading" secondItem="FFP-Yo-79q" secondAttribute="leading" id="yPf-kP-a8U"/>
+                            <constraint firstItem="xdZ-v3-cbn" firstAttribute="centerX" secondItem="ZXn-sV-5yo" secondAttribute="centerX" id="s62-aI-eWp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WhV-1f-8pz"/>
                     <connections>
+                        <outlet property="appleIcon" destination="dkD-If-gEz" id="MWs-GF-9dL"/>
+                        <outlet property="bananaIcon" destination="ZWJ-4E-hnb" id="pXD-Pa-PaM"/>
+                        <outlet property="cherryIcon" destination="WYY-6w-cWo" id="0cP-Ln-fdk"/>
+                        <outlet property="grapeIcon" destination="72m-yP-eDa" id="eBw-Xv-PYV"/>
                         <outlet property="indicator" destination="xdZ-v3-cbn" id="tew-vt-CCx"/>
+                        <outlet property="melonIcon" destination="M4c-3Z-W4n" id="PJb-g7-I9r"/>
+                        <outlet property="orangeIcon" destination="2pb-NP-dzs" id="w9v-X3-sxo"/>
                         <outlet property="photoImageView" destination="ZXn-sV-5yo" id="rFT-mo-xZj"/>
-                        <outlet property="predictImageView" destination="bxT-hf-iia" id="19B-2m-wCM"/>
+                        <outlet property="strawberryIcon" destination="JKH-rm-vHc" id="p8z-dW-iUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sq3-ho-NA9" sceneMemberID="firstResponder"/>
@@ -111,4 +125,13 @@
             <point key="canvasLocation" x="-106" y="38"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="apple" width="64" height="64"/>
+        <image name="banana" width="64" height="64"/>
+        <image name="cherry" width="64" height="64"/>
+        <image name="grape" width="64" height="64"/>
+        <image name="melon" width="64" height="64"/>
+        <image name="orange" width="64" height="64"/>
+        <image name="strawberry" width="64" height="64"/>
+    </resources>
 </document>

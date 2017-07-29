@@ -17,12 +17,18 @@ class ViewController: UIViewController {
     //=========================
     
     @IBOutlet weak var photoImageView: UIImageView!
-    @IBOutlet weak var predictImageView: UIImageView!
     @IBOutlet weak var indicator: UIActivityIndicatorView! {
         didSet {
             indicator.isHidden = true
         }
     }
+    @IBOutlet weak var appleIcon: UIImageView!
+    @IBOutlet weak var bananaIcon: UIImageView!
+    @IBOutlet weak var cherryIcon: UIImageView!
+    @IBOutlet weak var grapeIcon: UIImageView!
+    @IBOutlet weak var melonIcon: UIImageView!
+    @IBOutlet weak var orangeIcon: UIImageView!
+    @IBOutlet weak var strawberryIcon: UIImageView!
     
     let imagePicker = UIImagePickerController()
     let classifier = Classifier()
@@ -36,6 +42,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        resetFruitsIconAppearance()
         imagePicker.delegate = self
         classifier.delegate = self
     }
@@ -53,6 +60,17 @@ class ViewController: UIViewController {
     
     @IBAction func openLibrary(_ sender: UIBarButtonItem) {
         openPickerController(with: .photoLibrary)
+    }
+    
+    func resetFruitsIconAppearance() {
+        let alpha: CGFloat = 0.2
+        appleIcon.alpha = alpha
+        bananaIcon.alpha = alpha
+        cherryIcon.alpha = alpha
+        grapeIcon.alpha = alpha
+        melonIcon.alpha = alpha
+        orangeIcon.alpha = alpha
+        strawberryIcon.alpha = alpha
     }
     
 }

@@ -23,6 +23,8 @@ extension ViewController: UINavigationControllerDelegate, UIImagePickerControlle
         photoImageView.image = image
         // 分類処理中indicatorを表示
         indicator.isHidden = false
+        // 果物アイコンをリセット
+        resetFruitsIconAppearance()
         // 分類を行う
         classifier.classify(image: image)
     }
