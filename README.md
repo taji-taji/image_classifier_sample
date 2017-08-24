@@ -44,8 +44,8 @@ pyenv local anaconda2-4.4.0/envs/fruits-classify
 ### ▼ Keras, Tensorflow, CoreMLToolsのインストール
 
 ```sh
-# pip install tensorflow=1.1.0
-# pip install keras=2.0.4
-# pip install coremltools=0.4.0
+# pip install tensorflow==1.1.0
+# pip install keras==2.0.4
+# pip install coremltools==0.4.0
 pip install -r requirements.txt
 ```
