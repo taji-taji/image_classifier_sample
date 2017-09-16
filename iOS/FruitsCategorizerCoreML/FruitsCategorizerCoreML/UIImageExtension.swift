@@ -10,17 +10,15 @@ import UIKit
 
 extension UIImage {
     
-    func getCVPixelBuffer(dimeniton: CGFloat) -> CVPixelBuffer? {
+    func getCVPixelBuffer(size: CGSize) -> CVPixelBuffer? {
         var pixelBuffer: CVPixelBuffer?
-        let imageDimention: CGFloat = dimeniton
         let rgbColorSpace = CGColorSpaceCreateDeviceRGB()
-        let imageSize = CGSize(width: imageDimention, height: imageDimention)
-        let imageRect = CGRect(origin: CGPoint(x: 0, y: 0), size: imageSize)
+        let imageRect = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
         
         let options = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
                        kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
         
-        UIGraphicsBeginImageContextWithOptions(imageSize, true, 1.0)
+        UIGraphicsBeginImageContextWithOptions(size, true, 1.0)
         self.draw(in: imageRect)
         guard let newImage = UIGraphicsGetImageFromCurrentImageContext() else {
             return nil

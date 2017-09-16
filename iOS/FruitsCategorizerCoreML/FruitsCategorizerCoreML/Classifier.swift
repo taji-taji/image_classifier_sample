@@ -19,7 +19,7 @@ class Classifier {
     
     func classify(image: UIImage) {
         // modelのinputと同じ数値をdimentionに入れる
-        guard let buffer = image.getCVPixelBuffer(dimeniton: 100) else {
+        guard let buffer = image.getCVPixelBuffer(size: CGSize(width: 100, height: 100)) else {
             return
         }
         DispatchQueue.global(qos: .userInteractive).async {
