@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E0476E01F6AC6340022C5E4 /* fruits_classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0E0476DF1F6AC5180022C5E4 /* fruits_classifier.mlmodel */; };
-		0E15B9891F22F6FE00AE8312 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B9881F22F6FE00AE8312 /* Fruits.swift */; };
+		0E129BF71F6CDA0100953640 /* fruits_classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0E129BF61F6CD9FC00953640 /* fruits_classifier.mlmodel */; };
 		0E15B98B1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B98A1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift */; };
 		0E15B98D1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B98C1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift */; };
 		0E15B9931F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B9921F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift */; };
@@ -42,8 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E0476DF1F6AC5180022C5E4 /* fruits_classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = fruits_classifier.mlmodel; path = ../../../../udemy/coremltools/models/fruits_classifier.mlmodel; sourceTree = "<group>"; };
-		0E15B9881F22F6FE00AE8312 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		0E129BF61F6CD9FC00953640 /* fruits_classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = fruits_classifier.mlmodel; path = ../../../../udemy/coremltools/models/fruits_classifier.mlmodel; sourceTree = "<group>"; };
 		0E15B98A1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerSourceTypeExtension.swift; sourceTree = "<group>"; };
 		0E15B98C1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UIImagePickerControllerDelegate.swift"; sourceTree = "<group>"; };
 		0E15B9921F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientationExtension.swift; sourceTree = "<group>"; };
@@ -113,7 +111,7 @@
 		0E5F7C591F224AA000A8A88C /* FruitsCategorizerVision */ = {
 			isa = PBXGroup;
 			children = (
-				0E0476DF1F6AC5180022C5E4 /* fruits_classifier.mlmodel */,
+				0E129BF61F6CD9FC00953640 /* fruits_classifier.mlmodel */,
 				0E5F7C5A1F224AA000A8A88C /* AppDelegate.swift */,
 				0E5F7C5C1F224AA000A8A88C /* ViewController.swift */,
 				0E15B98C1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift */,
@@ -121,7 +119,6 @@
 				0E15B98A1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift */,
 				0E15B9961F244F6B00AE8312 /* Classifier.swift */,
 				0E15B99A1F2457BF00AE8312 /* ClassifierDelegate.swift */,
-				0E15B9881F22F6FE00AE8312 /* Fruits.swift */,
 				0E15B9921F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift */,
 				0E5F7C5E1F224AA000A8A88C /* Main.storyboard */,
 				0E5F7C611F224AA000A8A88C /* Assets.xcassets */,
@@ -286,9 +283,8 @@
 				0E15B98D1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift in Sources */,
 				0E15B9931F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift in Sources */,
 				0E15B9991F2454E600AE8312 /* ViewController+ClassifierDelegate.swift in Sources */,
-				0E15B9891F22F6FE00AE8312 /* Fruits.swift in Sources */,
 				0E15B98B1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift in Sources */,
-				0E0476E01F6AC6340022C5E4 /* fruits_classifier.mlmodel in Sources */,
+				0E129BF71F6CDA0100953640 /* fruits_classifier.mlmodel in Sources */,
 				0E5F7C5B1F224AA000A8A88C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

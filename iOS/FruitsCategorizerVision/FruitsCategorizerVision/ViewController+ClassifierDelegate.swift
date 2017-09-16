@@ -12,21 +12,19 @@ extension ViewController: ClassifierDelegate {
     
     func didClassify(with identifier: String) {
         indicator.isHidden = true
-        guard let fruit = Fruits(withIdentifier: identifier) else {
-            return
-        }
-        switch fruit {
-        case .apple: setPredictedIconAppearance(icon: appleIcon)
-        case .banana: setPredictedIconAppearance(icon: bananaIcon)
-        case .cherry: setPredictedIconAppearance(icon: cherryIcon)
-        case .grape: setPredictedIconAppearance(icon: grapeIcon)
-        case .melon: setPredictedIconAppearance(icon: melonIcon)
-        case .orange: setPredictedIconAppearance(icon: orangeIcon)
-        case .strawberry: setPredictedIconAppearance(icon: strawberryIcon)
+        switch identifier {
+        case "apple": setPredictedIconAppearance(to: appleIcon)
+        case "banana": setPredictedIconAppearance(to: bananaIcon)
+        case "cherry": setPredictedIconAppearance(to: cherryIcon)
+        case "grape": setPredictedIconAppearance(to: grapeIcon)
+        case "melon": setPredictedIconAppearance(to: melonIcon)
+        case "orange": setPredictedIconAppearance(to: orangeIcon)
+        case "strawberry": setPredictedIconAppearance(to: strawberryIcon)
+        default: resetFruitsIconAppearance()
         }
     }
     
-    private func setPredictedIconAppearance(icon: UIImageView) {
+    private func setPredictedIconAppearance(to icon: UIImageView) {
         let transform = icon.transform
         UIView.animate(
             withDuration: 0.3,
