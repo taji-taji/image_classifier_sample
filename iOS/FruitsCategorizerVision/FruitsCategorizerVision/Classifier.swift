@@ -13,7 +13,6 @@ import ImageIO
 class Classifier {
     
     weak var delegate: ClassifierDelegate?
-    var inputImage: CIImage!
     let model = fruits_classifier()
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
@@ -33,9 +32,8 @@ class Classifier {
             fatalError("can't create CIImage from UIImage")
         }
         let orientation = CGImagePropertyOrientation(image.imageOrientation)
-        inputImage = ciImage.oriented(forExifOrientation: Int32(orientation.rawValue))
         
-        let handler = VNImageRequestHandler(ciImage: ciImage, orientation: CGImagePropertyOrientation(rawValue: UInt32(Int32(orientation.rawValue)))!)
+        let handler = VNImageRequestHandler(ciImage: ciImage, orientation: CGImagePropertyOrientation(rawValue: orientation.rawValue)!)
         DispatchQueue.global(qos: .userInteractive).async {
             do {
                 try handler.perform([self.classificationRequest])
