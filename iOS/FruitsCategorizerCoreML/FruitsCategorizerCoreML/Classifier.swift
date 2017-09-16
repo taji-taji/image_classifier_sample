@@ -10,7 +10,7 @@ import UIKit
 
 class Classifier {
     
-    var delegate: ClassifierCompatible?
+    weak var delegate: ClassifierDelegate?
     let model = fruits_classifier()
     
     deinit {

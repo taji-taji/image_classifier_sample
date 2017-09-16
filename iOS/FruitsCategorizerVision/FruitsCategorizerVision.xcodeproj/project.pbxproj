@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0476E01F6AC6340022C5E4 /* fruits_classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0E0476DF1F6AC5180022C5E4 /* fruits_classifier.mlmodel */; };
 		0E15B9891F22F6FE00AE8312 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B9881F22F6FE00AE8312 /* Fruits.swift */; };
 		0E15B98B1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B98A1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift */; };
 		0E15B98D1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B98C1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift */; };
 		0E15B9931F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B9921F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift */; };
 		0E15B9971F244F6B00AE8312 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B9961F244F6B00AE8312 /* Classifier.swift */; };
-		0E15B9991F2454E600AE8312 /* ViewController+ClassifierCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B9981F2454E600AE8312 /* ViewController+ClassifierCompatible.swift */; };
-		0E15B99B1F2457BF00AE8312 /* ClassifierCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B99A1F2457BF00AE8312 /* ClassifierCompatible.swift */; };
+		0E15B9991F2454E600AE8312 /* ViewController+ClassifierDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B9981F2454E600AE8312 /* ViewController+ClassifierDelegate.swift */; };
+		0E15B99B1F2457BF00AE8312 /* ClassifierDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15B99A1F2457BF00AE8312 /* ClassifierDelegate.swift */; };
 		0E5F7C5B1F224AA000A8A88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C5A1F224AA000A8A88C /* AppDelegate.swift */; };
 		0E5F7C5D1F224AA000A8A88C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C5C1F224AA000A8A88C /* ViewController.swift */; };
 		0E5F7C601F224AA000A8A88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F7C5E1F224AA000A8A88C /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		0E5F7C651F224AA000A8A88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F7C631F224AA000A8A88C /* LaunchScreen.storyboard */; };
 		0E5F7C701F224AA000A8A88C /* FruitsCategorizerVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C6F1F224AA000A8A88C /* FruitsCategorizerVisionTests.swift */; };
 		0E5F7C7B1F224AA000A8A88C /* FruitsCategorizerVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerVisionUITests.swift */; };
-		0EFAAB1A1F275467009EE15E /* fruits_classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAAB191F275467009EE15E /* fruits_classifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0476DF1F6AC5180022C5E4 /* fruits_classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = fruits_classifier.mlmodel; path = ../../../../udemy/coremltools/models/fruits_classifier.mlmodel; sourceTree = "<group>"; };
 		0E15B9881F22F6FE00AE8312 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 		0E15B98A1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerSourceTypeExtension.swift; sourceTree = "<group>"; };
 		0E15B98C1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UIImagePickerControllerDelegate.swift"; sourceTree = "<group>"; };
 		0E15B9921F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientationExtension.swift; sourceTree = "<group>"; };
 		0E15B9961F244F6B00AE8312 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
-		0E15B9981F2454E600AE8312 /* ViewController+ClassifierCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ClassifierCompatible.swift"; sourceTree = "<group>"; };
-		0E15B99A1F2457BF00AE8312 /* ClassifierCompatible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierCompatible.swift; sourceTree = "<group>"; };
+		0E15B9981F2454E600AE8312 /* ViewController+ClassifierDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ClassifierDelegate.swift"; sourceTree = "<group>"; };
+		0E15B99A1F2457BF00AE8312 /* ClassifierDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierDelegate.swift; sourceTree = "<group>"; };
 		0E5F7C571F224AA000A8A88C /* FruitsCategorizerVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitsCategorizerVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5F7C5A1F224AA000A8A88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5F7C5C1F224AA000A8A88C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		0E5F7C761F224AA000A8A88C /* FruitsCategorizerVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitsCategorizerVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5F7C7A1F224AA000A8A88C /* FruitsCategorizerVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCategorizerVisionUITests.swift; sourceTree = "<group>"; };
 		0E5F7C7C1F224AA000A8A88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EFAAB191F275467009EE15E /* fruits_classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = fruits_classifier.mlmodel; path = ../../../coremltools/models/fruits_classifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +113,14 @@
 		0E5F7C591F224AA000A8A88C /* FruitsCategorizerVision */ = {
 			isa = PBXGroup;
 			children = (
-				0EFAAB191F275467009EE15E /* fruits_classifier.mlmodel */,
+				0E0476DF1F6AC5180022C5E4 /* fruits_classifier.mlmodel */,
 				0E5F7C5A1F224AA000A8A88C /* AppDelegate.swift */,
 				0E5F7C5C1F224AA000A8A88C /* ViewController.swift */,
 				0E15B98C1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift */,
-				0E15B9981F2454E600AE8312 /* ViewController+ClassifierCompatible.swift */,
+				0E15B9981F2454E600AE8312 /* ViewController+ClassifierDelegate.swift */,
 				0E15B98A1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift */,
 				0E15B9961F244F6B00AE8312 /* Classifier.swift */,
-				0E15B99A1F2457BF00AE8312 /* ClassifierCompatible.swift */,
+				0E15B99A1F2457BF00AE8312 /* ClassifierDelegate.swift */,
 				0E15B9881F22F6FE00AE8312 /* Fruits.swift */,
 				0E15B9921F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift */,
 				0E5F7C5E1F224AA000A8A88C /* Main.storyboard */,
@@ -280,15 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E15B99B1F2457BF00AE8312 /* ClassifierCompatible.swift in Sources */,
+				0E15B99B1F2457BF00AE8312 /* ClassifierDelegate.swift in Sources */,
 				0E15B9971F244F6B00AE8312 /* Classifier.swift in Sources */,
 				0E5F7C5D1F224AA000A8A88C /* ViewController.swift in Sources */,
 				0E15B98D1F2334CF00AE8312 /* ViewController+UIImagePickerControllerDelegate.swift in Sources */,
 				0E15B9931F243D5B00AE8312 /* CGImagePropertyOrientationExtension.swift in Sources */,
-				0E15B9991F2454E600AE8312 /* ViewController+ClassifierCompatible.swift in Sources */,
+				0E15B9991F2454E600AE8312 /* ViewController+ClassifierDelegate.swift in Sources */,
 				0E15B9891F22F6FE00AE8312 /* Fruits.swift in Sources */,
-				0EFAAB1A1F275467009EE15E /* fruits_classifier.mlmodel in Sources */,
 				0E15B98B1F23345800AE8312 /* UIImagePickerControllerSourceTypeExtension.swift in Sources */,
+				0E0476E01F6AC6340022C5E4 /* fruits_classifier.mlmodel in Sources */,
 				0E5F7C5B1F224AA000A8A88C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

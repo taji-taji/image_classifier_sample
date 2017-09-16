@@ -1,5 +1,5 @@
 //
-//  ViewController+ClassifierCompatible.swift
+//  ViewController+ClassifierDelegate.swift
 //  FruitsCategorizerCoreML
 //
 //  Created by 多鹿豊 on 2017/07/25.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension ViewController: ClassifierCompatible {
+extension ViewController: ClassifierDelegate {
     
     func didClassify(with identifier: String) {
         indicator.isHidden = true

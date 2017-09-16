@@ -1,5 +1,5 @@
 //
-//  ClassifierCompatible.swift
+//  ClassifierDelegate.swift
 //  FruitsCategorizerVision
 //
 //  Created by 多鹿豊 on 2017/07/23.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ClassifierCompatible {
+protocol ClassifierDelegate: class {
     func didClassify(with identifier: String)
 }
