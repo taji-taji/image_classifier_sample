@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s0a-11-lmb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5ns-wG-dnZ">
+            <objects>
+                <navigationController id="s0a-11-lmb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YKC-Ds-M3H">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cXA-en-hVF" kind="relationship" relationship="rootViewController" id="cYy-JQ-QVK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlE-ja-QjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-916" y="38"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b25-sP-EHX">
+            <objects>
+                <viewController id="cXA-en-hVF" customClass="ViewController" customModule="FruitsCategorizerDownload" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ai-7g-f5I"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uma-Hi-o3a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oyu-Eh-c3b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0g-Xg-yBW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="375"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="h0g-Xg-yBW" secondAttribute="height" multiplier="1:1" id="rFf-nT-7gF"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zmq-kn-BH3">
+                                <rect key="frame" x="10" y="454" width="355" height="64"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="5tp-JT-Cpg">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="b4l-Py-hKb">
+                                        <rect key="frame" x="51" y="0.0" width="48.5" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cherry" translatesAutoresizingMaskIntoConstraints="NO" id="xHs-YG-50b">
+                                        <rect key="frame" x="102.5" y="0.0" width="48" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grape" translatesAutoresizingMaskIntoConstraints="NO" id="YVf-OA-9Qj">
+                                        <rect key="frame" x="153.5" y="0.0" width="48" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="melon" translatesAutoresizingMaskIntoConstraints="NO" id="VlP-w6-8i0">
+                                        <rect key="frame" x="204.5" y="0.0" width="48" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange" translatesAutoresizingMaskIntoConstraints="NO" id="QD9-bN-Wyd">
+                                        <rect key="frame" x="255.5" y="0.0" width="48.5" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strawberry" translatesAutoresizingMaskIntoConstraints="NO" id="V7o-Rn-m4n">
+                                        <rect key="frame" x="307" y="0.0" width="48" height="64"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pph-9a-2JL">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="organize" id="33A-uc-mRP">
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="openLibrary:" destination="cXA-en-hVF" id="vdB-nV-A5h"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kQ5-Hs-LPe"/>
+                                    <barButtonItem systemItem="camera" id="mD9-C8-JcM">
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <connections>
+                                            <action selector="openCamera:" destination="cXA-en-hVF" id="y9B-z1-K1r"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4gL-QC-bng">
+                                <rect key="frame" x="177" y="241" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQZ-v2-VM4">
+                                <rect key="frame" x="0.0" y="518" width="375" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgn-bd-gbc">
+                                        <rect key="frame" x="87" y="31" width="200" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibd-lF-nKq">
+                                                <rect key="frame" x="63.5" y="0.0" width="73" height="30"/>
+                                                <state key="normal" title="Download!"/>
+                                                <connections>
+                                                    <action selector="downloadButtonTapped:" destination="cXA-en-hVF" eventType="touchUpInside" id="Ywx-IF-em0"/>
+                                                </connections>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-ra-ejH">
+                                                <rect key="frame" x="0.0" y="40" width="200" height="2"/>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="uEI-ra-ejH" secondAttribute="bottom" id="FJ5-tJ-nos"/>
+                                            <constraint firstItem="uEI-ra-ejH" firstAttribute="leading" secondItem="Hgn-bd-gbc" secondAttribute="leading" id="Fv3-8n-n64"/>
+                                            <constraint firstItem="uEI-ra-ejH" firstAttribute="top" secondItem="Ibd-lF-nKq" secondAttribute="bottom" constant="10" id="Xcw-aL-mrj"/>
+                                            <constraint firstItem="Ibd-lF-nKq" firstAttribute="centerX" secondItem="Hgn-bd-gbc" secondAttribute="centerX" id="mIw-sh-rsv"/>
+                                            <constraint firstItem="Ibd-lF-nKq" firstAttribute="top" secondItem="Hgn-bd-gbc" secondAttribute="top" id="mwv-D6-K9w"/>
+                                            <constraint firstAttribute="trailing" secondItem="uEI-ra-ejH" secondAttribute="trailing" id="n8j-ra-9Bq"/>
+                                            <constraint firstAttribute="width" constant="200" id="sZT-AL-IWu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Hgn-bd-gbc" firstAttribute="centerY" secondItem="TQZ-v2-VM4" secondAttribute="centerY" id="QHr-qa-bq4"/>
+                                    <constraint firstItem="Hgn-bd-gbc" firstAttribute="centerX" secondItem="TQZ-v2-VM4" secondAttribute="centerX" id="VaW-lp-gvQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pph-9a-2JL" firstAttribute="leading" secondItem="Oyu-Eh-c3b" secondAttribute="leading" id="0sb-sg-c7A"/>
+                            <constraint firstAttribute="trailing" secondItem="Zmq-kn-BH3" secondAttribute="trailing" constant="10" id="2aw-lR-jdZ"/>
+                            <constraint firstItem="Zmq-kn-BH3" firstAttribute="leading" secondItem="Oyu-Eh-c3b" secondAttribute="leading" constant="10" id="BBz-Qm-Fnp"/>
+                            <constraint firstItem="Uma-Hi-o3a" firstAttribute="top" secondItem="pph-9a-2JL" secondAttribute="bottom" id="BVO-Ef-yD0"/>
+                            <constraint firstItem="h0g-Xg-yBW" firstAttribute="top" secondItem="3ai-7g-f5I" secondAttribute="bottom" id="Czn-YT-UVg"/>
+                            <constraint firstItem="Zmq-kn-BH3" firstAttribute="top" secondItem="h0g-Xg-yBW" secondAttribute="bottom" constant="15" id="OA4-oE-q9x"/>
+                            <constraint firstItem="iIB-Wi-Nbb" firstAttribute="trailing" secondItem="TQZ-v2-VM4" secondAttribute="trailing" id="Qhq-83-SnD"/>
+                            <constraint firstAttribute="trailing" secondItem="h0g-Xg-yBW" secondAttribute="trailing" id="Rui-6m-scO"/>
+                            <constraint firstAttribute="trailing" secondItem="pph-9a-2JL" secondAttribute="trailing" id="Tbb-Iw-fvi"/>
+                            <constraint firstItem="TQZ-v2-VM4" firstAttribute="top" secondItem="Zmq-kn-BH3" secondAttribute="bottom" id="cff-66-fbq"/>
+                            <constraint firstItem="h0g-Xg-yBW" firstAttribute="leading" secondItem="Oyu-Eh-c3b" secondAttribute="leading" id="ogB-0s-I68"/>
+                            <constraint firstItem="4gL-QC-bng" firstAttribute="centerX" secondItem="h0g-Xg-yBW" secondAttribute="centerX" id="qsW-H0-M4S"/>
+                            <constraint firstItem="pph-9a-2JL" firstAttribute="top" secondItem="TQZ-v2-VM4" secondAttribute="bottom" id="uli-XE-xxA"/>
+                            <constraint firstItem="TQZ-v2-VM4" firstAttribute="leading" secondItem="iIB-Wi-Nbb" secondAttribute="leading" id="xEW-kr-T1b"/>
+                            <constraint firstItem="4gL-QC-bng" firstAttribute="centerY" secondItem="h0g-Xg-yBW" secondAttribute="centerY" id="xSR-gh-u0p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iIB-Wi-Nbb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H66-SU-TTj"/>
+                    <connections>
+                        <outlet property="appleIcon" destination="5tp-JT-Cpg" id="Nr7-dj-eYr"/>
+                        <outlet property="bananaIcon" destination="b4l-Py-hKb" id="fVG-iw-hH6"/>
+                        <outlet property="cherryIcon" destination="xHs-YG-50b" id="yjJ-r4-7cE"/>
+                        <outlet property="downloadBaseView" destination="Hgn-bd-gbc" id="iIZ-FO-FYa"/>
+                        <outlet property="downloadButton" destination="Ibd-lF-nKq" id="TVF-q4-FZ7"/>
+                        <outlet property="grapeIcon" destination="YVf-OA-9Qj" id="VKJ-hi-Ys2"/>
+                        <outlet property="indicator" destination="4gL-QC-bng" id="QbK-qi-hcQ"/>
+                        <outlet property="melonIcon" destination="VlP-w6-8i0" id="tsN-38-1Vx"/>
+                        <outlet property="orangeIcon" destination="QD9-bN-Wyd" id="tBX-RF-ePc"/>
+                        <outlet property="photoImageView" destination="h0g-Xg-yBW" id="9aR-DV-h7j"/>
+                        <outlet property="progressView" destination="uEI-ra-ejH" id="3RP-6d-Kaw"/>
+                        <outlet property="strawberryIcon" destination="V7o-Rn-m4n" id="4Yv-Bi-7ud"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KG0-lj-mJc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106.40000000000001" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="64" height="64"/>
+        <image name="banana" width="64" height="64"/>
+        <image name="cherry" width="64" height="64"/>
+        <image name="grape" width="64" height="64"/>
+        <image name="melon" width="64" height="64"/>
+        <image name="orange" width="64" height="64"/>
+        <image name="strawberry" width="64" height="64"/>
+    </resources>
+</document>
